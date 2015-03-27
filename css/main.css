@@ -1,1 +1,82 @@
-@import url(normalize.css);header{height:100vh;margin-bottom:20px;background-image:url('http://www.ihdwal.com/wp-content/uploads/2013/11/los-angeles-skyline-at-night-black-and-white-70-200mm-f28l----tag-digital-photography-and-hdr.jpg');background-position:center center;background-size:cover;background-attachment:fixed;background-repeat:no-repeat;display:flex;flex-direction:column;flex-wrap:wrap;justify-content:center;align-items:center}h1,h3{font-weight:700;font-family:'Lato',sans-serif;color:white;text-transform:uppercase;text-shadow:0 0 3px black}h1{letter-spacing:8px;padding:30px 60px;border:10px solid white;margin:0;font-size:250%;background-color:rgba(0,0,0,0.3)}h3{letter-spacing:2px;margin-top:10px}p{width:600px;margin:0 auto 20px}
+@import url(normalize.min.css);
+/** Main Style Part */
+header {
+  height: 100vh;
+  /* Style Part */
+  margin-bottom: 20px;
+  background-image: url("http://www.ihdwal.com/wp-content/uploads/2013/11/los-angeles-skyline-at-night-black-and-white-70-200mm-f28l----tag-digital-photography-and-hdr.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* Technical Part */
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1, h3 {
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px black;
+}
+
+h1 {
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 2.5em;
+}
+h1 span {
+  padding: 25px 80px;
+  border: 10px solid white;
+  display: inline-block;
+}
+
+h3 {
+  letter-spacing: 2px;
+}
+
+p {
+  width: 600px;
+  margin: 0 auto 20px;
+}
+
+footer {
+  height: 100px;
+  background-image: url("http://www.ihdwal.com/wp-content/uploads/2013/11/los-angeles-skyline-at-night-black-and-white-70-200mm-f28l----tag-digital-photography-and-hdr.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* Same on the header */
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

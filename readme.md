@@ -1,6 +1,6 @@
-﻿**Simple Html + Css Full Header Page**
+﻿#Simple Html + Css Full Header Page
 
-A Simple Full Page Header made in **Jade** and **Sass+Bourbon** with a suggestion by [DevTips](https://github.com/devtips, "DevTips")
+A Simple Full Page Header made in **Jade** and **Sass+Bourbon** with a suggestion by [DevTips](https://github.com/devtips "DevTips")
 
 ***
 
