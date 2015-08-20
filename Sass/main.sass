@@ -43,6 +43,9 @@ header, footer
 			transform: uppercase
 			shadow: 0 0 3px black
 
+		@media only screen and (max-width: 640px)
+			text-align: center
+
 	h1
 		letter-spacing: 6px
 		margin:
@@ -52,10 +55,19 @@ header, footer
 		font:
 			size: 2.5em
 
+		@media only screen and (max-width: 640px)
+			font:
+				size: 1.5em
+
 		span
 			padding: 25px 80px
 			border: 10px solid white
 			display: inline-block
+
+			@media only screen and (max-width: 640px)
+				padding: 15px 40px
+				border:
+					width: 7px
 
 	h3
 		letter-spacing: 2px
@@ -71,15 +83,23 @@ header, footer
 section
 	max-width: 640px
 	margin: 10px auto 30px
+	padding: 0 10px
+
+	@media only screen and (max-width: 640px)
+		font-size: .9em
 
 	article
 		text-align: justify
 
 		.headline
-			text-align: center
+			text:
+				align: center
+				transform: uppercase
 			border-bottom: 2px solid #aaa
 			padding: 10px 0 20px
-
+			color: #aaa
+			font:
+				weight: 400
 
 footer
 	height: 100px
@@ -98,3 +118,8 @@ footer
 	align:
 		items: center
 	margin-bottom: 0
+
+	@media only screen and (max-width: 640px)
+		flex:
+			direction: row
+			wrap: nowrap

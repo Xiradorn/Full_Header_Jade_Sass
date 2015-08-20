@@ -439,16 +439,32 @@ header h1, header h3, header h5, footer h1, footer h3, footer h5 {
   text-transform: uppercase;
   text-shadow: 0 0 3px black;
 }
+@media only screen and (max-width: 640px) {
+  header h1, header h3, header h5, footer h1, footer h3, footer h5 {
+    text-align: center;
+  }
+}
 header h1, footer h1 {
   letter-spacing: 6px;
   margin-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.3);
   font-size: 2.5em;
 }
+@media only screen and (max-width: 640px) {
+  header h1, footer h1 {
+    font-size: 1.5em;
+  }
+}
 header h1 span, footer h1 span {
   padding: 25px 80px;
   border: 10px solid white;
   display: inline-block;
+}
+@media only screen and (max-width: 640px) {
+  header h1 span, footer h1 span {
+    padding: 15px 40px;
+    border-width: 7px;
+  }
 }
 header h3, footer h3 {
   letter-spacing: 2px;
@@ -465,14 +481,23 @@ header h5 a:hover, footer h5 a:hover {
 section {
   max-width: 640px;
   margin: 10px auto 30px;
+  padding: 0 10px;
+}
+@media only screen and (max-width: 640px) {
+  section {
+    font-size: 0.9em;
+  }
 }
 section article {
   text-align: justify;
 }
 section article .headline {
   text-align: center;
+  text-transform: uppercase;
   border-bottom: 2px solid #aaa;
   padding: 10px 0 20px;
+  color: #aaa;
+  font-weight: 400;
 }
 
 footer {
@@ -504,4 +529,16 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0;
+}
+@media only screen and (max-width: 640px) {
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+  }
 }
