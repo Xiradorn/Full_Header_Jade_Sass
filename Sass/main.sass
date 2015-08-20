@@ -1,12 +1,16 @@
-@import 'normalize.min.css'
-
+@import 'normalize'
 @import 'bourbon/bourbon'
 
-$bgImg: 'http://www.ihdwal.com/wp-content/uploads/2013/11/los-angeles-skyline-at-night-black-and-white-70-200mm-f28l----tag-digital-photography-and-hdr.jpg'
+$bgImg: '../image/bg.jpg'
 
 /** Main Style Part */
-	
-header
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400)
+
+*
+	font:
+		family: "Raleway","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+
+header, footer
 	height: 100vh
 	/* Style Part */
 	margin:
@@ -25,36 +29,53 @@ header
 	justify-content: center
 	align:
 		items: center
-		
-h1, h3
-	font:
-		weight: 700
-		family: 'Lato',sans-serif
-	color: white
-	text:
-		transform: uppercase
-		shadow: 0 0 3px black
 
-h1
-	letter-spacing: 6px
-	margin:
-		bottom: 10px
-	background:
-		color: rgba(0,0,0,.3)
-	font:
-		size: 2.5em
-  
-	span
-		padding: 25px 80px
-		border: 10px solid white
-		display: inline-block
-	
-h3
-	letter-spacing: 2px
-	
-p
-	width: 600px
-	margin: 0 auto 20px
+	h1, h3, h5
+		font:
+			weight: 700
+			//family: 'Lato',sans-serif
+		color: white
+		text:
+			transform: uppercase
+			shadow: 0 0 3px black
+
+	h1
+		letter-spacing: 6px
+		margin:
+			bottom: 10px
+		background:
+			color: rgba(0,0,0,.3)
+		font:
+			size: 2.5em
+
+		span
+			padding: 25px 80px
+			border: 10px solid white
+			display: inline-block
+
+	h3
+		letter-spacing: 2px
+
+	h5
+		a
+			color: rgba(255, 255, 255, .6)
+			transition: all .3s ease-in-out
+
+			&:hover
+				color: rgba(255, 255, 255, 1)
+
+section
+	max-width: 640px
+	margin: 10px auto 30px
+
+	article
+		text-align: justify
+
+		.headline
+			text-align: center
+			border-bottom: 2px solid #aaa
+			padding: 10px 0 20px
+
 
 footer
 	height: 100px
