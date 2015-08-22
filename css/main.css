@@ -435,6 +435,7 @@ header, footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 header h1, header h3, header h5, footer h1, footer h3, footer h5 {
   font-weight: 700;
@@ -543,8 +544,11 @@ footer {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  footer h3, footer h5 {
+    margin: 5px auto;
   }
 }

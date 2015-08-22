@@ -36,6 +36,7 @@ header, footer
 	justify-content: center
 	align:
 		items: center
+	overflow: hidden
 
 	h1, h3, h5
 		font:
@@ -128,4 +129,7 @@ footer
 	@media only screen and (max-width: 640px)
 		flex:
 			direction: row
-			wrap: nowrap
+			wrap: wrap
+
+		h3, h5
+			margin: 5px auto
