@@ -406,6 +406,9 @@ header, footer {
   height: 100vh;
   /* Style Part */
   margin-bottom: 20px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-image: url("../image/bg.jpg");
   background-position: center center;
   background-size: cover;
@@ -502,6 +505,9 @@ section article .headline {
 
 footer {
   height: 100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-image: url("../image/bg.jpg");
   background-position: center center;
   background-size: cover;
